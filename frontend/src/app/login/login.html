@@ -1,0 +1,33 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #0f172a; font-family: sans-serif;">
+  <div style="background: #1e293b; padding: 35px; border-radius: 16px; width: 340px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); color: white;">
+    
+    <h2 style="text-align: center; margin-bottom: 8px; color: #38bdf8;">Secure Dashboard</h2>
+    <p style="text-align: center; font-size: 13px; color: #94a3b8; margin-bottom: 24px;">Please login to continue</p>
+    
+    <div style="margin-bottom: 16px;">
+      <label style="font-size: 13px; color: #cbd5e1; display: block; margin-bottom: 6px;">Username</label>
+      <input type="text" [(ngModel)]="username" placeholder="Enter username" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; box-sizing: border-box;">
+    </div>
+
+    <div style="margin-bottom: 12px;">
+      <label style="font-size: 13px; color: #cbd5e1; display: block; margin-bottom: 6px;">Password</label>
+      <input type="password" [(ngModel)]="password" placeholder="Enter password" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; box-sizing: border-box;">
+    </div>
+
+    <!-- Forgot Password Link -->
+    <div style="text-align: right; margin-bottom: 20px;">
+      <a (click)="onForgotPassword()" style="color: #38bdf8; font-size: 12px; text-decoration: none; cursor: pointer;">Forgot Password?</a>
+    </div>
+
+    <button (click)="login()" style="width: 100%; padding: 12px; background: #0284c7; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background 0.3s;">
+      Login
+    </button>
+
+    <!-- Sign Up Option -->
+    <div style="text-align: center; margin-top: 20px; font-size: 13px; color: #94a3b8;">
+      Don't have an account? 
+      <a (click)="onSignUp()" style="color: #38bdf8; font-weight: 600; text-decoration: none; cursor: pointer;">Sign Up</a>
+    </div>
+
+  </div>
+</div>
